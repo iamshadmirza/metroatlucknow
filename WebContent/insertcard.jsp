@@ -15,7 +15,7 @@
 	String Fname = request.getParameter("Fname");
 	String Uname = request.getParameter("Uname");
 	String Uadhar = request.getParameter("Adhar");
-	String Uadress = request.getParameter("Address");
+	String Uaddress = request.getParameter("Address");
 	String Ucontact = request.getParameter("Contact");
 	
 	
@@ -23,7 +23,7 @@
 	    Class.forName("com.mysql.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/lmp","root","root");
 		Statement st=con.createStatement();
-		String query= "INSERT INTO smartcard (fullname,username,aadhar,currentaddr,contact) VALUES('"+Fname+"','"+Uname+"','"+Uage+"','"+Uemail+"','"+Upassword+"')";
+		String query= "INSERT INTO smartcard (fullname,username,aadhar,currentaddr,contact) VALUES('"+Fname+"','"+Uname+"','"+Uadhar+"','"+Uaddress+"','"+Ucontact+"')";
 		int flag = st.executeUpdate(query);
 		if(flag==1){
 			PrintWriter outa = response.getWriter();
