@@ -23,13 +23,13 @@
 	    Class.forName("com.mysql.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/lmp","root","root");
 		Statement st=con.createStatement();
-		String query= "INSERT INTO smartcard (fullname,username,aadhar,currentaddr,contact) VALUES('"+Fname+"','"+Uname+"','"+Uage+"','"+Uemail+"','"+Upassword+"')";
+		String query= "INSERT INTO smartcard (fullname,username,aadhar,currentaddr,contact) VALUES('"+Fname+"','"+Uname+"','"+Adhar+"','"+Address+"','"+Contact+"')";
 		int flag = st.executeUpdate(query);
 		if(flag==1){
 			PrintWriter outa = response.getWriter();
 			out.println("<script type=\"text/javascript\">");
-			out.println("alert('Registration successful!');");
-			out.println("location='login.jsp';");
+			out.println("alert('Insertion successful!');");
+			out.println("location='index.jsp';");
 			out.println("</script>");
 			
 		}
@@ -37,7 +37,7 @@
 			PrintWriter outa = response.getWriter();
 			out.println("<script type=\"text/javascript\">");
 			out.println("alert('Try again!');");
-			out.println("location='smartcardapplicard.jsp';");
+			out.println("location='index.jsp';");
 			out.println("</script>");
 			
 		}
