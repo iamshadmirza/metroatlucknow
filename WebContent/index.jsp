@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-
-
 <html>
-
 <head>
 <title>Metro@Lucknow</title>
 <meta charset="utf-8">

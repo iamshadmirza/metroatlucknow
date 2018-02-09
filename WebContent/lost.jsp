@@ -123,7 +123,7 @@ textarea{
 	margin-top: 10px;
 }
 
-.login input[type=button]{
+.login input[type=submit]{
 	width: 260px;
 	height: 35px;
 	background: #fff;
@@ -138,11 +138,11 @@ textarea{
 	margin-top: 10px;
 }
 
-.login input[type=button]:hover{
+.login input[type=submit]:hover{
 	opacity: 0.8;
 }
 
-.login input[type=button]:active{
+.login input[type=submit]:active{
 	opacity: 0.6;
 }
 
@@ -156,7 +156,7 @@ textarea{
 	border: 1px solid rgba(255,255,255,0.9);
 }
 
-.login input[type=button]:focus{
+.login input[type=submit]:focus{
 	outline: none;
 }
 
@@ -199,18 +199,21 @@ textarea{
 			<div>Lost And <span>Found</span><br><br></div>
 		</div>
 		<br>
+		<form action="insertlost.jsp" method="post">
 		<div class="login">
 				<b>For Lost and Found concerns please contact..</b></br>
 				<b>Transport Nagar Station</b></br>
 				<b>Contact no. 0522-6602518</b></br>
 				<b>Timings 08:00 to 20:00 hrs</b></br>
 				Closed on Sundays and All National Gazetted Holidays.</br> </br>
-				<input type="text" placeholder="Your Name" name="user"><br>
-				<input type="email" placeholder="Mobile No." name="user"><br>
-				<input type="text" placeholder="Location (Last Seen)" name="user"><br>
-				<textarea type="text" placeholder="Details of belonging" name="user" rows="5"></textarea>
-				<input type="button" style="background-color:#d01717;" value="Send">
+				<form action="insertlost.jsp" method="post">
+				<input type="text" placeholder="Your Name" name="name"><br>
+				<input type="text" placeholder="Mobile No." name="contact"><br>
+				<input type="text" placeholder="Location (Last Seen)" name="location"><br>
+				<textarea  placeholder="Details of belonging" name="details" rows="5"></textarea>
+				<input type="submit" style="background-color:#d01717;" value="Send">
 		</div>
+		</form>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
   

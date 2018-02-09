@@ -113,7 +113,7 @@
 	margin-top: 10px;
 }
 
-.login input[type=button]{
+.login input[type=submit]{
 	width: 260px;
 	height: 35px;
 	background: #fff;
@@ -128,11 +128,11 @@
 	margin-top: 10px;
 }
 
-.login input[type=button]:hover{
+.login input[type=submit]:hover{
 	opacity: 0.8;
 }
 
-.login input[type=button]:active{
+.login input[type=submit]:active{
 	opacity: 0.6;
 }
 
@@ -146,7 +146,7 @@
 	border: 1px solid rgba(255,255,255,0.9);
 }
 
-.login input[type=button]:focus{
+.login input[type=submit]:focus{
 	outline: none;
 	
 }

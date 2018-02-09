@@ -123,7 +123,7 @@ textarea{
 	margin-top: 10px;
 }
 
-.login input[type=button]{
+.login input[type=submit]{
 	width: 260px;
 	height: 35px;
 	background: #fff;
@@ -138,11 +138,11 @@ textarea{
 	margin-top: 10px;
 }
 
-.login input[type=button]:hover{
+.login input[type=submit]:hover{
 	opacity: 0.8;
 }
 
-.login input[type=button]:active{
+.login input[type=submit]:active{
 	opacity: 0.6;
 }
 
@@ -156,7 +156,7 @@ textarea{
 	border: 1px solid rgba(255,255,255,0.9);
 }
 
-.login input[type=button]:focus{
+.login input[type=submit]:focus{
 	outline: none;
 }
 
@@ -199,13 +199,15 @@ textarea{
 			<div>Passenger's <span>Feedback</span><br><br></div>
 		</div>
 		<br>
+		<form action="insertfeedback.jsp" method="post">
 		<div class="login">
-				<input type="text" placeholder="Your Name" name="user"><br>
-				<input type="email" placeholder="Email id" name="user"><br>
-				<input type="text" placeholder="Subject" name="user"><br>
-				<textarea type="text" placeholder="Message" name="user" rows="5"></textarea>
-				<input type="button" style="background-color:#d01717;" value="Send">
+				<input type="text" placeholder="Your Name" name="name"><br>
+				<input type="email" placeholder="Email id" name="email"><br>
+				<input type="text" placeholder="Subject" name="subject"><br>
+				<textarea type="text" placeholder="Message" name="message" rows="5"></textarea>
+				<input type="submit" style="background-color:#d01717;" value="Send">
 		</div>
+		</form>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
   
